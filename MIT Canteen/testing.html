@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="testing.css">
+
+  <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"> -->
+
+          <!-- For Shopping Cart Icon (Font Awesome) -->
+          <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" >
+          <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
+
+
+</head>
+
+<body>
+
+    <div class="Navbar">
+        
+        <div class="Navbar__Link Navbar__Link-brand">
+            <span class="logo mit">MIT</span><em><span class=logo_canteen> Canteen</span></em>
+         </div>
+         <div class="Navbar__Link Navbar__Link-toggle">
+           <i class="fas fa-bars"></i>
+         </div>
+
+       <nav class="Navbar__Items">
+         <div class="Navbar__Link">
+            <a href="index.html"> Home  </a>
+         </div>
+         <div class="Navbar__Link">
+            <a href="menu.html"> Menu </a>
+         </div>
+         <div class="Navbar__Link">
+            <a href="our-vision.html"> Our Vision </a> 
+         </div>
+         <div class="Navbar__Link">
+            <a href="contact-us.html"> Order Online </a> 
+         </div>
+         <div class="Navbar__Link">
+            <a href="testimonials.html"> Testimonials </a>  
+         </div>
+
+
+       </nav>
+       <nav class="Navbar__Items Navbar__Items--right">
+         <div class="Navbar__Link">
+            <a href=""> <button class="Login-btn" > Log In </button> </a>
+         </div>
+         <div class="Navbar__Link">
+            <a href=""> <i class="fa fa-shopping-cart" aria-hidden="true"> </i> </a>
+         </div>
+       </nav>
+    
+    </div>
+
+    <script>
+        function classToggle() {
+  const navs = document.querySelectorAll('.Navbar__Items')
+  
+  navs.forEach(nav => nav.classList.toggle('Navbar__ToggleShow'));
+}
+
+document.querySelector('.Navbar__Link-toggle')
+  .addEventListener('click', classToggle);
+    </script>
+  
+
+</body>
+</html>

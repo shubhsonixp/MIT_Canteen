@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - Malwa Institue of Technology</title>
+
+    <!------------------------------------- Link for Home Page css Style Sheet ----------------------------------------->
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" 
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous"> -->
+    
+    <!-- For Search Icon (Bootstrap) -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" 
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <!-- For Shopping Cart Icon (Font Awesome) -->
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" >
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">    
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="mobile_style.css">
+    
+</head>
+
+<!------------------------------------------------- Body of Home Page ------------------------------------------------->
+
+<body>
+    
+    
+    <!------------------------------------------------ Navigation bar ------------------------------------------------->
+    <div class="Navbar">
+        
+        <!-- Logo of MIT Canteen -->
+        <div class="Navbar__Link Navbar__Link-brand" title="MIT Logo">
+            <span class="logo mit">MIT</span><em><span class=logo_canteen> Canteen</span></em>
+         </div>
+
+        <!-- Toggle Button -->
+         <div class="Navbar__Link Navbar__Link-toggle">
+           <i class="fas fa-bars"></i>
+         </div>
+
+        <!-- Left Side Navigation Items -->
+        <nav class="Navbar__Items">
+            <div class="Navbar__Link">
+                <a href="index.html"> Home  </a>
+            </div>
+         
+            <div class="Navbar__Link">
+               <a href="menu.html"> Menu </a>
+            </div>
+         
+            <div class="Navbar__Link">
+               <a href="our-vision.html"> Our Vision </a> 
+             </div>
+            
+            <div class="Navbar__Link">
+                <a href="contact-us.html"> Order Online </a> 
+            </div>
+         
+            <div class="Navbar__Link">
+               <a href="testimonials.html"> Testimonials </a>  
+            </div>
+       </nav>
+
+       <!-- Right Side Navigation Items -->
+       <nav class="Navbar__Items Navbar__Items--right">
+
+            <!-- Login In Button -->
+            <div class="Navbar__Link">
+                <a href=""> <button class="Login-btn" > Log In </button> </a>
+            </div>
+            
+            <!-- Cart Button -->
+            <div class="Navbar__Link" title="Cart">
+                <a href=""> <i class="fa fa-shopping-cart" class="cart" aria-hidden="true"> </i> </a>
+            </div>
+       </nav>
+    
+    </div>
+
+
+
+
+
+
+    <!------------------------------------ Bottom to up Button Feature  -------------------------------------->
+    </div>
+    <div class="up-arrow" onclick="topFunction()" id="myBtn" title="Go to top"> 
+        <a href="#top">
+            <img src="web ccms images/up-arrow.svg" alt=""> 
+        </a>
+    </div>
+
+
+
+
+
+
+
+
+    <!----------------------------------------------- Home Page Image --------------------------------------------------->
+    <div class="home-image"> 
+        <img src="web ccms images\home (4).jpg" alt="Our Passion For Food" >
+        
+        <!--For in the image text-->
+        <div class="home-img-text"><em><strong> "Our Passion For Food, Discover How Great <br>Tasting Food is at the Heart of our Canteen"</strong></em></div>
+    </div>
+
+
+
+
+
+
+    <!------------------------------------------ Come & Dine Section ------------------------------------------------>
+    <div class="come-dine">
+        <h1>
+            __ Come and Dine __
+        </h1>
+        <h3>
+            WITH THE FINEST
+        </h3>
+    </div>
+
+    <!-- Part of Come & dine section -->
+    <section class="come-dine-section">
+        <div>  
+            <figure>
+                <h3> Fresh Daily </h3>
+                <img src="web ccms images\waiter.svg" alt="Food vector icon">
+                <figcaption>
+                    Savour the creamy goodness of Champion Fruit Cream. We bet, there's the goodness of cream in every bite!
+                </figcaption> 
+            </figure>
+
+            <figure>
+                <h3> Savoury & Creamy </h3>
+                <img src="web ccms images\bbq.svg" alt="Food vector icon">
+                <figcaption>
+                    Sumptuous delicious food baked in our cafe with curated ingredients and recipes
+                </figcaption> 
+            </figure>
+
+            <figure>
+                <h3> Good Food </h3>
+                <img src="web ccms images\burger.svg" alt="Food vector icon">
+                <figcaption>
+                    Each and every day we strive to better serve our community, 
+                    customers with food that's fresh, tasty and healthy
+                </figcaption> 
+            </figure>
+        </div>
+    </section>
+
+
+    <!--------------------------------------- Our most loved Dishes Section ------------------------------------------->
+    
+    <div class="dishes" style="background-image: url('web ccms images/99.jpg');" >
+        <div class="loved-dishes">
+            <h1 class="dishes-h1">
+            __ Todays Specials __
+            </h1>
+        </div>
+
+        <!-- Part of Our most loved dishes section -->
+        <section class="loved-dishes-section">
+            <div>  
+                <figure>
+                    <a href="menu.html#sandwich" style="text-decoration: none;">
+                        <div>
+                            <img src="web ccms images\sandwich2.jpg" alt="Masala Sandwich Picture">
+                            <figcaption>
+                                Masala Sandwich
+                            </figcaption>
+                        </div>
+                    </a> 
+                </figure>                
+                
+                <figure>
+                    <a href="menu.html#fries" style="text-decoration: none;">
+                    <div>
+                        <img src="web ccms images\frenchfries.jpg" alt="French Fries Picture">
+                        <figcaption>
+                            French Fries
+                        </figcaption>
+                    </div>
+                    </a> 
+                </figure>
+                
+                <figure>
+                    <a href="menu.html#sandwich" style="text-decoration: none;">
+                    <div>
+                        <img src="web ccms images\sandwich1.jpg" alt="Cheese Sandwich Picture">
+                        <figcaption>
+                            Cheese Sandwich
+                        </figcaption> 
+                    </div>
+                    </a>
+                </figure>
+                
+            </div>
+        </section>
+    </div>
+
+
+
+
+
+
+
+
+
+
+    <!------------------------------------ Our Most Loved Dishes Section ------------------------------------->
+    <div class="come-dine">
+        <h1>
+            __ Our Most Loved Dishes __
+        </h1>
+    </div>
+
+    <section>
+                <!-- inner section for padding -->
+                <div class="our-philosphy-1">
+    
+                    <!-- 1st column -->
+                    <div class="oml-row-1">
+                        <a href="menu.html#sandwich" style="text-decoration: none; color: inherit;">
+                            <h3>  Masala Sandwich </h3>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <div class="oml-sub-row">
+                                
+                                <img src="web ccms images\sandwich1.jpg" alt="">
+                                <p class="oml-p1"> 
+                                    Sumptuous delicious food baked in our
+                                    cafe with curated ingredients
+                                </p>
+                                <p class="oml-p2">
+                                    &#x20b9; 30
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+       
+    
+                    <!-- 2ndt column -->
+                    <div class="oml-row-1">
+                        <a href="menu.html#pasta" style="text-decoration: none; color: inherit;">
+                            <h3> Red Sause Pasta </h3>
+                            <div class="oml-star">
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                            </div>
+                            <div class="oml-sub-row">
+                                <img src="web ccms images/19739.jpg" alt="">
+                                <p class="oml-p1"> 
+                                    Sumptuous delicious food baked in our
+                                    cafe with curated ingredients
+                                </p>
+                                <p class="oml-p2">
+                                    &#x20b9; 80
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+    
+    
+                    <!-- 3rd column -->
+                    <div class="oml-row-1">
+                        <a href="menu.html#pasta" style="text-decoration: none; color: inherit;">
+                            <h3> White Sause Pasta </h3>
+                            <div class="oml-star">
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                            </div>
+                            <div class="oml-sub-row">
+                                <img src="web ccms images/5842.jpg" alt="">
+                                <p class="oml-p1"> 
+                                    Sumptuous delicious food baked in our
+                                    cafe with curated ingredients
+                                </p>
+                                <p class="oml-p2">
+                                    &#x20b9; 80
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+                    
+
+
+                    <!-- 4th column -->
+                    <div class="oml-row-1">
+                        <a href="menu.html#sandwich" style="text-decoration: none; color: inherit;">
+                            <h3> Salted Fries </h3>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <div class="oml-sub-row">
+                                <img src="web ccms images\frenchfries.jpg" alt="">
+                                <p class="oml-p1"> 
+                                    Sumptuous delicious food baked in our
+                                    cafe with curated ingredients
+                                </p>
+                                <p class="oml-p2">
+                                    &#x20b9; 30
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+    
+    </section>
+
+
+
+
+
+
+
+
+    <!-------------------------------------- Details of Wesite owner and creators -------------------------------------->
+    <footer>
+            <div class="foot-row-1">
+
+                <div class="foot-row-2">
+
+                    <div class="foot-row-3">
+
+                        <div class="foot-column-1">
+                            <h4> ABOUT </h4>
+                            <p>
+                                Malwa Institute of Technology is governed by Indus Global Educational
+                                & Welfare Society which was founded in 2003 by a group of industrialists
+                                and educationalists who shared a vision of establishing centers of 
+                                scientific learning around the country.
+                            </p>
+
+                            <ul>
+                                <li> <a href=""> <i class="fab fa-facebook-f"> </i> Facebook </a> </li>
+                                <li> <a href=""> <i class="fab fa-instagram">  </i>Instagram </a></li>
+                            </ul>
+                            
+                        </div >
+                        
+                        <div class="foot-column-1">
+                            <h4> QUICK LINKS </h4>
+                            <ul>
+                                <li class="foot-ql"> <a href="index.html"> HOME </a></li>
+                                <li class="foot-ql"> <a href="menu.html"> MENU </a> </li>
+                                <li class="foot-ql"> <a href="order-online.html"> ORDER ONLINE </a></li>
+                                <li class="foot-ql"> <a href="about-us.html"> ABOUT US </a></li>
+                            </ul>
+
+
+
+                        </div>
+
+                        <div class="foot-column-c">
+                            <h4> CONTACT INFORMATION </h4>
+
+                            <ul>
+                                <li> <a href=""> <i class="fas fa-phone-alt"></i> +91-731-2810001-08 </a> </li>
+                                <li> <a href=""> <i class="far fa-envelope"></i>  admission@mitindore.co.in </a> </li>
+                                <li> <a href=""> <i class="fas fa-map-marker-alt"></i> Indore-Dewas Bypass Road, Indore (MP)-452016 </a> </li>
+                                <li> <a href=""> <i class="fas fa-globe-americas"></i> For Professional Courses, Visit: www.altius.ac.in </a> </li>
+                            </ul>
+                        </div>
+
+                    </div>
+
+                    <div class="foot-line">
+                            
+                    </div>
+
+                </div>
+
+                <div class="foot-sec2">
+                    <p> © Copyright 2004 - 2020. All Rights Reserved </p>
+                    
+                    <p class="sep-column-2">
+                         Designed & Developed with <i class="fas fa-heart" style="color: #e22a31;"></i> By Original Tech
+                    </p>
+                </div>
+
+            </div>
+
+    </footer>
+
+
+    <!------------------------------------------------- Java Script ---------------------------------------------------->
+      
+    <!-- Toggle Script -->
+    <script>
+        function classToggle() {
+         const navs = document.querySelectorAll('.Navbar__Items')
+         
+         navs.forEach(nav => nav.classList.toggle('Navbar__ToggleShow'));
+         }
+
+         document.querySelector('.Navbar__Link-toggle')
+         .addEventListener('click', classToggle);
+    </script>
+
+
+    <!-- Bottom to Top Button -->
+    <script>
+        //Get the button
+        var mybutton = document.getElementById("myBtn");
+
+        // To hide the button
+        mybutton.style.display = "none"
+
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+
+        function scrollFunction() {
+
+            if (document.body.scrollTop > 500 || document.documentElement.scrollTop > 500) {
+                mybutton.style.display = "block";
+            } 
+            else {
+                mybutton.style.display = "none";
+                }
+            }
+
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function() {
+            scrollFunction()
+        };
+        
+    </script>
+
+    
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" 
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" 
+        crossorigin="anonymous">
+    </script>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" 
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" 
+        crossorigin="anonymous">
+    </script>
+    
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" 
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" 
+    crossorigin="anonymous">
+    </script>
+
+</body>
+
+</html>

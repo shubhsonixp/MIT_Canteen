@@ -1,0 +1,844 @@
+/* ------------------------------------- MIT CANTEEN CSS STYLE SHEET ----------------------------- */
+
+/* ----------------------------------------- Common On Every Page -------------------------------- */
+
+html{
+    scroll-behavior: smooth;
+}
+
+/* Body of Home Page */
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #faf9f6;
+    font-family: serif;   
+}
+
+/* Top marron Colour line */
+.blank {
+    margin: -5px;
+    padding: 0;
+    background-color: #262626;
+    color:#262626;
+    width: 100%;
+}
+
+/* ------------------------------------------ Navigation bar ----------------------------------------*/ 
+header
+{   
+    margin: 0;
+    padding: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 55px;
+    background-color: #faf9f6;
+    z-index: 99;
+}
+/*----- MIT Canteen LOGO ------*/
+
+.logo.mit {
+    margin-right: 5px;
+    color: red;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 20px;
+}
+.logo_canteen {
+    margin-right: auto;
+    color: black;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 20px;
+}
+/*---- END of MIT Canteen LOGO ----*/
+
+/*---------------------------------------------------- Navigation Bar -----------------------------------------------*/
+  
+  .Navbar {
+    background-color: #faf9f6;
+    width: 100%;
+    display: flex;
+    position: fixed;
+    padding: 12px 15px 12px 15px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #262626;
+    z-index: 99;
+    font-size: 20px;
+  }
+  
+  
+  .Navbar__Items {
+    margin-top: 1px;
+    display: flex;  
+  }
+  
+  .Navbar__Items a{
+    margin-left: 18px;
+    margin-right: auto;
+    text-decoration: none;
+    color: #262626;
+  }
+
+  .Navbar__Items a:hover{
+      text-decoration: underline;
+      color: maroon;
+  }  
+  
+  .Navbar__Items--right {
+    margin-top: -3px;
+    margin-left:auto;
+  }
+  
+  .Navbar__Link-toggle {
+    display: none;
+  }
+  
+  @media only screen and (max-width: 836px) {
+    
+    .Navbar__Items, .Navbar {
+      flex-direction: column;
+    }
+      
+  .Navbar__Items {
+      display:none;
+    }
+      
+  .Navbar__Items--right {
+      margin-left:0;
+    }
+      
+  .Navbar__ToggleShow {
+      display: flex;
+    }
+      
+  .Navbar__Link-toggle {
+      align-self: flex-end;
+      display: initial;
+      position: absolute;
+      cursor: pointer;
+     } 
+  }
+
+
+/* --------Login Button ----------*/
+
+.Login-btn {
+    font-size: 16px;
+    width: 90px;
+    height: 30px;
+    border: solid 1px #262626;
+    color: #262626;
+    background-color: #faf9f6;
+}
+
+.Login-btn:hover {
+    cursor: pointer;
+    background-color: white;
+}
+
+/* -------Shopping Cart ------ */
+.fa-shopping-cart{
+    margin-top: 4px;
+    font-size: 26px;    
+}
+/*---- END Navigation Bar ----*/
+
+
+/* -------------------------------------- Bottom to up Button Feature --------------------------------------- */
+.up-arrow img{
+    float: right;
+    color: black;
+    opacity: 0.85;
+}
+
+.up-arrow{
+    margin-top: 40%;
+    margin-left: 92%;
+    width: 45px;
+    height: 45px;
+    z-index: 99;
+    float:right;
+    position:fixed;
+    top: 0;
+    display: block;
+    border: none;
+    outline: none
+}
+
+/* ------------------------------------ Menu Dotted Vertical Navigation ------------------------------------ */
+.hup{
+    margin-top: 16%;
+    position: fixed;
+    top: 0;
+    font-size: 28px;
+}
+  
+.hup a {
+    text-decoration: none;
+    color: #262626;
+}
+
+.hup li{
+    margin-left: 15px;
+    border: none;
+    border-radius: 50%;
+}
+  
+  /* Tooltip text */
+  .what .fun {
+    padding: 5px;
+    visibility: hidden;
+    width: 150px;
+    font-size: 20px;
+    background: #262626;
+    opacity: 0.9;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+   
+    /* Position the tooltip text - see examples below! */
+    position: absolute;
+    z-index: 1;
+  }
+  
+  /* Show the tooltip text when you mouse over the tooltip container */
+  .what:hover .fun {
+    visibility: visible;
+  }
+
+
+/*-------------------------------------------- END OF Navigation Bar ---------------------------------------*/
+
+/* ---------------------------------------- END of Common On Every Page ----------------------------------- */
+
+
+
+
+
+
+
+
+
+
+/* ------------------------------------------ Home Page Style Sheet ----------------------------------------*/
+
+/* Image after Navigation bar */
+.home-image img {
+    margin-top: -5px ;
+    width: 100%;
+    height: 550px;
+}
+
+/* For text in the image */
+.home-image {
+    text-align: center;
+    color: white;
+}
+
+/* For text in the image */
+.home-img-text {
+    font-size: 30px;
+    color: aliceblue;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+
+/* ------------------------------------- Come & Dine Section ---------------------------------------------*/
+
+
+.come-dine {
+    text-align: center;
+    color: #533834;
+    margin-top: 30px;
+}
+
+.come-dine h3 {
+    color: #aea512;
+}
+
+.come-dine-section div {
+    display: flex;
+    text-align: center;
+    margin-top: -25px;
+}
+
+.come-dine-section div figure {
+    padding: 70px;
+    color: #533834;
+}
+
+.come-dine-section figure img{
+    width: 64px;
+    height: 64px;
+}
+
+.come-dine-section figure figcaption{
+    margin-top: 5px;
+    font-size: 17px;
+
+}
+
+/* ----------------------------------------- Loved Dishes Section ---------------------------------------------*/
+
+.dishes {
+    margin-top: -50px;
+    background-size: 100% 100% ;
+}
+
+.dishes .loved-dishes .dishes-h1{
+    text-align: center;
+    color:#533834;
+    padding-top: 20px;
+}
+
+.loved-dishes-section div {
+    display: flex;
+    text-align: center;
+}
+
+.loved-dishes-section div figure {
+    color: #533834;
+    margin: 40px;
+    margin-left: 80px;
+    border-style: double;
+    border-color: #533834;    
+}
+
+.loved-dishes-section div figure div{
+    display: inline;
+    color: whitesmoke;
+    background-color: rgba(25, 12, 12, 0.6);
+}
+
+.loved-dishes-section figure img{
+    width: 300px;
+    height: 300px;
+}
+
+.loved-dishes-section figure:hover{
+    cursor: pointer;
+    transform: scale(1.02);
+    
+}
+
+.loved-dishes-section figure figcaption{
+    font-size: 25px;
+    background-color: rgba(25, 12, 12, 0.6);    
+}
+
+
+/*---------------------------------------  Our most loved dishes section ---------------------------------------*/
+
+.our-philosphy-1{
+    margin: 20px;
+    display: flex;
+    color: #382f2f;
+    font-size: 17px;
+}
+
+.our-philosphy-1 .oml-row-1{
+    margin: 30px;
+    display: block;
+    text-align: center;
+}
+
+.our-philosphy-1 .oml-row-1:hover{
+    transform: scale(1.02);
+}
+
+
+.our-philosphy-1 .oml-row-1 h3{
+    color: #aea512;
+    margin: 20px;
+}
+
+.our-philosphy-1 .oml-row-1 .oml-star{
+    margin-right: 8px;
+}
+
+.our-philosphy-1 .oml-row-1 img{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin: 20px;
+    margin-right: 15px;
+}
+
+.our-philosphy-1 .oml-row-1 .oml-p1{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font: 18px;
+    color: #262626;
+}
+
+.our-philosphy-1 .oml-row-1 .oml-p2{
+    font-size: 30px;
+}
+
+
+/* ------------------------------------- END of Home Page Style Sheet ----------------------------------------------*/
+
+
+
+
+
+
+
+
+
+
+/*----------------------------------------------- Menu Style Sheet ----------------------------------------*/
+
+/*------------------------------------------ Image After Navigation Bar ------------------------------------*/
+
+/* Image after Navigation bar */
+.main-image img{
+    margin-top: -5px ;
+    width: 100%;
+    height: 600px;
+    
+}
+
+/* For text in the image */
+.menu-image {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+/* For text in the image */
+.menu-img-text {
+    font-family: serif;
+    font-size: 40px;
+    color: wheat;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* ------------------------------------- Sandwitch MENU Section ---------------------------------------------*/
+
+.sandwitch-border img{
+    width: 150px;
+    height: 150px;
+}
+
+.sandwitch-dine {
+    margin-left: 350px;
+    text-align: center;
+    color: #262626;
+    display: flex;
+
+}
+
+.sandwitch-dine h6 {
+    color: #262626;
+}
+
+/* ------------------------------------------ common in all sections ---------------------------------------*/
+
+.common-menu-heading{
+    margin-top: 35px;
+    margin-left: 25px;
+}
+
+.common-dine-section .common-list{
+    margin-top: 10px;
+    padding: 20px;
+    display: flex;
+}
+
+
+.common-dine-section .common-list .heading-menu {
+    width: 400px;
+    height: 400px;
+    margin-left: 20px;
+    list-style: none;
+}
+
+.common-dine-section .common-list .heading-menu li {
+    padding: 20px;
+    color: #262626;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.common-dine-section .common-list .heading-menu li h6 {
+    margin-top: 10px;
+    color: grey;
+}
+
+.menu-dots {
+    font-size: 12px;
+}
+
+/* ------------------------------------- Maggie MENU Section ---------------------------------------------*/
+
+.maggie-border img{
+    width: 120px;
+    height: 120px;
+}
+
+.maggie-dine {
+    text-align: center;
+    color: #262626;
+    display: flex;
+    margin-left: 410px;
+}
+
+/* ------------------------------------- Fries MENU Section ---------------------------------------------*/
+
+.fries-border img{
+    width: 120px;
+    height: 120px;
+}
+
+.fries-dine {
+    display: flex;
+    margin-left: 440px;
+    text-align: center;
+    color: #262626;
+
+}
+
+/* ------------------------------------- Pasta MENU Section ---------------------------------------------*/
+
+.pasta-border img{
+    width: 120px;
+    height: 120px;
+}
+
+.pasta-dine {
+    display: flex;
+    margin-left: 430px;
+    text-align: center;
+    color: #262626;
+
+}
+
+/* ------------------------------------- beverages MENU Section ---------------------------------------------*/
+
+.beverages-border img{
+    width: 120px;
+    height: 120px;
+}
+
+.beverages-dine {
+    display: flex;
+    margin-left: 400px;
+    text-align: center;
+    color: #262626;
+
+}
+
+/* ------------------------------------- Bakery MENU Section ---------------------------------------------*/
+
+.bakery-border img{
+    width: 120px;
+    height: 120px;
+}
+
+.bakery-dine {
+    display: flex;
+    margin-left: 420px;
+    text-align: center;
+    color: #262626;
+
+}
+
+/* --------------------------------------- End of Menu Page Style Sheet -------------------------------------------*/
+
+
+
+
+
+
+
+
+
+
+
+/* -------------------------------------------- Our Vision Page Style Sheet ------------------------------------------*/
+
+/* Our Vision Page Main Image  */
+.our-vision-image img{
+    margin-top: -5px ;
+    width: 100%;
+    height: 580px;
+    text-align: center;
+    color: white;
+}
+
+
+/*----------------------------------------------- END of history section ---------------------------------------------*/
+/* --- History Section -- */
+section .history {
+    margin-left: 60px;
+    display: flex;
+    font-size: 20px;
+}
+
+.history .history-col-1{
+    padding: 20px;
+    width: 580px;
+    height: 300px;
+    margin: 30px;
+}
+
+.history img {
+    width: 480px;
+    height: 260px;
+    border: 2px #262626 double;
+    box-sizing: border-box;
+    border: 0 solid rgba(0, 0, 0, 0);
+    box-shadow: 0 0 0 4px #ffffff, 0 0 0 5px rgba(210, 200, 42, 0.5);
+}
+
+/*----------------------------------------------- END of history section ---------------------------------------------*/
+
+
+/*-----------------------------------------------  Our Philosphy section ---------------------------------------------*/
+
+.our-philosphy-1{
+    margin: 20px;
+    display: flex;
+    color: #382f2f;
+    font-size: 17px;
+}
+
+.our-philosphy-1 .op-row-1{
+    margin: 30px;
+}
+
+.our-philosphy-1 .op-row-1 h3{
+    border-bottom: 1px solid #533834;
+    display: table;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+
+.our-philosphy-1 .op-row-1 .op-sub-row{
+    display: flex;
+}
+
+.our-philosphy-1 .op-row-1 img{
+    width: 55px;
+    height: 55px;
+    margin-top: 10px;
+    margin-right: 15px;
+}
+
+
+
+/* --------------------------------------------- What we stand for ---------------------------------------------- */
+
+.wwsf{
+    margin-top: 40px;
+}
+
+.wwsf-sub{
+    margin-left: 50px;
+}
+
+.wwsf .standfor {
+    margin-left: 110px;
+    border-bottom: 1px solid #262626;
+    display: table;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    font-size: 30px;
+}
+
+.wwsf-sub p{
+    margin-left: 60px;
+    width: 500px;
+}
+
+.wwsf img{
+    margin-left: 180px;
+    margin-top: -10px;
+}
+
+.wwsf-logo{
+    color: red;
+}
+
+.wwsf-logo2{
+    margin-left: 7px;
+    color: green;
+}
+
+
+.wwsf .wwsf-sub{
+    display: flex;
+    padding: 20px;
+    margin: 30px;
+}
+
+.wwsf .wwsf-sub .history-col-1{
+    width: 500px;
+    font-size: 18px;
+
+}
+
+.wwsf img {
+    width: 480px;
+    height: 260px;
+    border: 2px #262626 double;
+    box-sizing: border-box;
+    border: 0 solid rgba(0, 0, 0, 0);
+    box-shadow: 0 0 0 4px #ffffff, 0 0 0 5px rgba(210, 200, 42, 0.5);
+}
+
+
+/*----------------------------------------- END of Our-Vision Page Style Sheet --------------------------------------*/
+
+
+
+
+
+
+/* -------------------------------------------------- Testimonial Section ----------------------------------------- */
+
+.testimoniali-section{
+    margin-top: 50px;
+}
+
+.testimonial {
+    margin: 30px;
+}
+
+.testimonial-row-1 {
+    display: flex;
+    text-align: center;
+}
+
+.testimonial-column {
+    margin-left: 100px;
+}
+
+
+.testimonial-row-1 img {
+    height: 250px;
+    width: 250px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 50%;
+}
+
+.testimonial-row-1 p {
+    width: 500px;
+    text-align: left;
+    color: #382f2f;
+    font-size: 17px;
+}
+
+
+
+
+
+
+
+/* ----------------------------------------------- END Testimonial Section ----------------------------------------- */
+
+
+
+
+/* ------------------------------------------ Footer for Each Page -------------------------------------------------*/
+
+/*---------------------------------- Details of Wesite owner and creators ------------------------------------------*/
+
+footer {
+    width: 100%;
+    height: 500px;
+    padding: 20px;
+    background-color:#262626;
+    color: #837f7e;
+    font-size: 16px;
+}
+
+footer .foot-row-3{
+    display: flex;
+    padding: 20px;
+}
+
+footer .foot-row-3 .foot-column-1{
+    width: 300px;
+    height: 350px;
+    margin-left: 100px;
+}
+
+footer .foot-row-3 .foot-column-c{
+    margin-left: 50px; 
+}
+
+footer h4 {
+    color: #ffffff;
+}
+
+footer .foot-row-3 .foot-column-1 ul li {
+    list-style: none;
+    padding: 10px;
+    font-size: 16px;
+    margin-left: -48px;
+}
+
+footer .foot-row-3 .foot-column-c ul li {
+    list-style: none;
+    padding: 12px;
+    font-size: 16px;
+    margin-left: -50px;
+}
+
+footer .foot-row-3 .foot-column-1 ul .foot-ql{
+    border-bottom: 1px solid #837f7e;
+    width: 280px;
+}
+
+
+
+footer  li a {
+    text-decoration: none;
+    color: #837f7e;
+}
+
+footer li i {
+    padding: 5px;
+    color: #e22a31;
+}
+
+footer li a:hover{
+    cursor: pointer;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+
+
+ .foot-line{
+    border-top: 1px solid #837f7e;
+    margin-top: -50px;
+    margin-left: 110px;
+    margin-right: 80px;
+}
+
+.foot-sec2{
+    margin-top: 15px;
+    display: flex;
+    margin-left: 110px;
+}
+
+.foot-sec2 .sep-column-2{
+    margin-left: 500px;
+}
+
+
+/*--------------------------------------------- END of Footer ---------------------------------------------------- */
+
+
+
+  
